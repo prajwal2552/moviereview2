@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Cards Grid</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #f4a261;
+        }
+
+        /* Homepage Section */
+        .home-section {
+            text-align: center;
+            padding: 50px;
+            background-color: #ffffff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .home-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .home-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .home-section button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #f4a261;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .home-section button:hover {
+            background-color: #e76f51;
+        }
+
+        /* Movie Grid */
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .movie-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .movie-card h2 {
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+        }
+
+        .movie-card p {
+            font-size: 0.9em;
+            color: #555;
+            padding: 0 15px 15px;
+        }
+
+        .movie-card .year {
+            font-size: 0.8em;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #fff;
+            padding: 50px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <h1>Welcome to Movie Central</h1>
+        <p>Discover your favorite movies, explore new genres, and find the latest releases all in one place.</p>
+        <button onclick="window.location.href='#movies'">Explore Movies</button>
+    </section>
+
+    <!-- Movies Grid -->
+    <div id="movies" class="movie-grid">
+        <!-- Movie Card 1 -->
+        <div class="movie-card">
+            <img src=" download.jpeg">
+            <h2>GOAT</h2>
+            <p class="year">Release Year: 2024</p>
+            <p>Gandhi is a hostage negotiator, field agent, and spy working for the Special Anti-Terrorist Squad (SATS). After years of service, he is called back for a critical mission that sets him on a dangerous collision course with his own past.</p>
+        </div>
+
+        <!-- Movie Card 2 -->
+        <div class="movie-card">
+            <img src="kgf2.jpeg">
+            <h2>KGF CHAPTER 2</h2>
+            <p class="year">Release Year: 2018</p>
+            <p>In the 1970s, a gangster named Rocky goes undercover as a slave to assassinate the owner of a notorious gold mine known as the Kolar Gold Fields.</p>
+        </div>
+
+        <!-- Movie Card 3 -->
+        <div class="movie-card">
+            <img src="max.jpeg">
+            <h2>MAX</h2>
+            <p class="year">Release Year: 2024</p>
+            <p>"Max" (2024) is a Kannada-language action thriller featuring Sudeep as a principled police officer entangled in a high-stakes political conspiracy. Critics have praised its gripping narrative and Sudeep's commanding performance, though some note a lack of memorable dialogues and a compelling antagonist.</p>
+        </div>
+
+        <!-- Movie Card 4 -->
+        <div class="movie-card">
+            <img src="kantara.jpeg">
+            <h2>KANTARA</h2>
+            <p class="year">Release Year: 2022</p>
+            <p>Kantara is a visually stunning masterpiece that blends folklore, action, and spirituality with gripping storytelling. Rishab Shetty's performance and the intense climax make it an unforgettable cinematic experience.</p>
+        </div>
+
+        
+
+        <!-- Movie Card 5 -->
+        <div class="movie-card">
+            <img src="salaar.jpeg">
+            <h2> SALAAR </h2>
+            <p class="year">Release Year: 2022</p>
+            <p>"Salaar" delivers a gripping tale of power and brotherhood, with Prabhas excelling as an invincible hero in this action-packed thriller. However, some critics feel it falls short, offering a repetitive storyline that lacks freshness. </p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Movie Central</h2>
+        <p>Welcome to Movie Central, your ultimate destination for movie lovers! Whether you're into action, drama, comedy, or documentaries, our platform brings you a curated list of the best films from all genres and eras. Dive into a world of cinematic masterpieces, hidden gems, and the latest releases. Stay up-to-date with new movies and discover your next favorite film!</p>
+        <p>Our goal is to make it easy for you to browse movies, read about their plots, and find the perfect movie for any occasion. Whether you're looking for something light-hearted or epic, we've got you covered!</p>
+    </section>
+
+</body>
+</html>
